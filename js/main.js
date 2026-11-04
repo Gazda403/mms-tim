@@ -275,6 +275,19 @@ function initProjectModal() {
   const triggerButtons = document.querySelectorAll('[data-modal-project]');
 
     const projectData = {
+    'kuhinja-open-space': {
+      title: 'Kuhinjsko ostrvo i otvoreni koncept za dnevni boravak',
+      category: 'Kuhinje i šankovi',
+      img: 'images/imagesss/dobrasoba.avif',
+      desc: 'Kompletno rešenje za moderan open-space koncept stana. Izrada centralnog šanka/ostrva u dezenu tamnog oraha koji spaja prostor za kuvanje i opuštanje, sa ugradnim ormarićima do plafona i visećim metalnim lusterima.',
+      specs: [
+        'Šank / Ostrvo: Debelozidna radna ploča i bočne obloge u dezenu oraha',
+        'Viseći elementi: Bela mat iverica visokog kvaliteta sa skrivenim otvaranjem',
+        'Funkcija: Mesto za brze obroke, rad i druženje sa pogledom na dnevnu sobu',
+        'Okov: Blum mehanizmi sa usporivačima za nesmetano tiho zatvaranje'
+      ]
+    },
+
     'kuhinja-kasmir': {
       title: 'Ugaona kuhinja u kašmir i hrast dezenu',
       category: 'Kuhinje po meri',
