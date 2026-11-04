@@ -43,3 +43,4 @@ ili jednostavno otvorite `index.html` u bilo kom modernom pretraživaču.
 ## 📍 Teritorija Poslovanja
 - **Baza i primarna zona**: Beograd, Novi Sad, Ruma, Inđija, Stara Pazova, Sremska Mitrovica, Šabac i ceo Sremski okrug.
 - **Kompletna opremanja**: Isporuka i montaža širom Srbije.
+

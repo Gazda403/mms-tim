@@ -274,76 +274,124 @@ function initProjectModal() {
 
   const triggerButtons = document.querySelectorAll('[data-modal-project]');
 
-  const projectData = {
-    'kuhinja-modern': {
-      title: 'Minimalistička kuhinja sa ostrvom i Fenix frontovima',
+    const projectData = {
+    'kuhinja-kasmir': {
+      title: 'Ugaona kuhinja u kašmir i hrast dezenu',
       category: 'Kuhinje po meri',
-      img: 'images/portfolio/kitchen-1.jpg',
-      desc: 'Elegantna moderna kuhinja u mat antracit i toplom hrast dezenu. Integrisano kuhinjsko ostrvo sa grejnim zonama, skrivenim utičnicama i prostranim fiokama sa Blum Legrabox mehanizmom.',
+      img: 'images/imagesss/kuhinja.jpg',
+      desc: 'Elegantna kuhinja izvedena do plafona sa podelom gornjih elemenata na dva nivoa (kašmir mat i hrast dekor). Integrisana ugradna tehnika, crne urezne profilne ručice i tihi Blum okovi.',
       specs: [
-        'Materijal: Fenix NTM supermat + Egger Halifax hrast',
-        'Radna ploča: Kompakt ploča 12mm otporna na vodu i toplotu',
-        'Okovi: Blum Legrabox sa usporivačima + Blum Aventos HF',
-        'Rasveta: Integrisani aluminijumski LED profil urezan u korpus'
+        'Frontovi: Oplemenjeni univer u kašmir mat boji + Egger Hrast',
+        'Radna ploča: 38mm vodootporna HPL ploča u dezenu hrasta',
+        'Okovi: Blum sa usporivačima (soft-close šarke i fioke)',
+        'Oprema: Ugradna rerna na visini, skriveni teleskopski aspirator'
       ]
     },
-    'kuhinja-drvo': {
-      title: 'Kuhinja čistih linija sa skrivenim gola profilima',
+    'dnevna-letvice': {
+      title: 'TV media zid sa akustičnim letvicama i LED rasvetom',
+      category: 'Dnevne sobe',
+      img: 'images/imagesss/dnevna.avif',
+      desc: 'Kompletan zidni sistem sa vertikalnim drvenim letvicama, indirektnom toplom LED rasvetom sa leve i desne strane, lebdećom TV komodom i staklenom vitrinom sa toniranim parsol staklom.',
+      specs: [
+        'Zidna obloga: Akustične drvene letvice na crnom apsorpcionom filcu',
+        'Rasveta: Integrisani aluminijumski LED kanali 3000K toplo bela',
+        'Komoda: Konzolna lebdeća komoda sa drvenom gornjom pločom i belim frontovima',
+        'Vitrina: Vitrina sa staklenim vratima i unutrašnjom rasvetom'
+      ]
+    },
+    'plakar-predsoblje': {
+      title: 'Predsoblje sa cipelarnikom, čivilukom i zidnom oblogom',
+      category: 'Plakari i predsoblja',
+      img: 'images/imagesss/ormar.webp',
+      desc: 'Praktično i upečatljivo rešenje za ulazni hodnik. Zidna obloga sa dekorom beljenog rustičnog drveta, masivne metalne kuke za odlaganje kaputa, gornja otvorena polica i donji cipelarnik na metalnim nogicama.',
+      specs: [
+        'Materijal: Egger pločasti materijal sa reljefnom rustičnom teksturom',
+        'Cipelarnik: Vrata sa usporivačima i metalnim lučnim ručicama',
+        'Dimenzije: Prilagođeno tačnoj širini zida hodnika',
+        'Okov: Čvrste metalne crne kuke i podesive nožice'
+      ]
+    },
+    'dnevna-rgb': {
+      title: 'TV zid sa lebdećim panelom i ambijentalnim svetlom',
+      category: 'Dnevne sobe',
+      img: 'images/imagesss/dnevna.jpg',
+      desc: 'Atraktivan TV zid sa isturenim centralnim panelom za TV, skrivenim prolazom za sve kablove, ambijentalnim pozadinskim osvetljenjem, akustičnim panelom i niskom medijapan komodom.',
+      specs: [
+        'Centralni panel: Mat bež panel sa pozadinskim LED osvetljenjem',
+        'Akustični panel: Vertikalne drvene letvice',
+        'Komoda: Dvodelna komoda sa mekim otvaranjem i skrivenom instalacijom',
+        'MMS Team oznaka: Autentičan projekat sa terena'
+      ]
+    },
+    'kuhinja-led': {
+      title: 'Moderna kuhinja sa ugrađenom LED linijskom rasvetom',
       category: 'Kuhinje po meri',
-      img: 'images/portfolio/kitchen-2.jpg',
-      desc: 'Bezvremenski dizajn bez klasičnih ručica. Otvaranje pomoću ugradnih crnih eloksiranih gola profila i servo-mehanizama na frižideru i mašini za sudove.',
+      img: 'images/imagesss/kuhina3.jpg',
+      desc: 'Kompaktna ugaona kuhinja sa visećim elementima u teksturi prirodnog hrasta, belim donjim elementima i urezanim aluminijumskim profilom sa ravnomernim radnim osvetljenjem.',
       specs: [
-        'Materijal: Farbani MDF (Medijapan) poliuretan 100% mat',
-        'Okovi: Blum sa tihim zatvaranjem, nosivost fioka do 65kg',
-        'Sudopera: Podgradna granitna sa integrisanim dozerom',
-        'Organizacija: Izvlačni špajz i ugaoni LeMans bubreg'
+        'Frontovi: Kombinacija prirodnog hrasta i bele mat',
+        'Radna ploča: Hrastova radna ploča sa bež granitnom sudoperom',
+        'Rasveta: Urezani ugaoni LED profil sa difuzorom bez tačkica',
+        'Okovi: Blum soft-close šarke i fioke'
       ]
     },
-    'plakar-walkin': {
-      title: 'Walk-in garderober sa parsol staklom i rasvetom',
-      category: 'Plakari i garderoberi',
-      img: 'images/portfolio/wardrobe-1.jpg',
-      desc: 'Luksuzni garderober rađen do plafona, sa transparentnim vratima u crnom aluminijumskom ramu, policama za obuću pod uglom i fiokama sa pregradama za satove i nakit.',
+    'kupatilo-stub': {
+      title: 'Kupatilski vertikalni ormar u petrol plavoj i orahu',
+      category: 'Kupatilski nameštaj',
+      img: 'images/imagesss/kupatilo2n.jpg',
+      desc: 'Ekskluzivni uski i visoki kupatilski stub izrađen od vlagootpornog materijala u petrol plavoj boji u kombinaciji sa toplim orahom. Sadrži otvorene police za brzi pristup i donji zatvoreni deo sa korpom.',
       specs: [
-        'Frontovi: Kaljeno zatamnjeno sivo staklo (Parsol) u alu ramu',
-        'Unutrašnjost: Egger tekstilni dezen sa toplim izgledom tkanine',
-        'Rasveta: Senzorski LED profili koji se pale na otvaranje',
-        'Oprema: Garderoberni liftovi i izvlačni nosači pantalona'
+        'Materijal: Vlagootporni lakirani MDF u petrol plavoj nijansi',
+        'Unutrašnjost: Dezen oraha sa otpornim melaminskim slojem',
+        'Namena: Iskoristivost uskog prostora pored sanitarija',
+        'Okov: Blum usporivači i skriveni nosači'
       ]
     },
-    'plakar-ugradni': {
-      title: 'Ugradni plakar od poda do plafona za hodnik',
-      category: 'Plakari i garderoberi',
-      img: 'images/portfolio/wardrobe-2.jpg',
-      desc: 'Maksimalno iskorišćenje prostora u hodniku sa skrivenim cipelarnikom, prostorom za dugačke kapute i gornjim boksom za sezonske kofere.',
+    'kuhinja-sank': {
+      title: 'Kuhinjsko poluostrvo sa reljefnim kanelurama',
+      category: 'Kuhinje i šankovi',
+      img: 'images/imagesss/kuhinjacesma.jpg',
+      desc: 'Elegantni šank koji odvaja kuhinjski deo od trpezarije. Prednji panel izrađen je sa finim vertikalnim kanelurama (rebrasti dezen), sa bočnom otvorenom policom za začine i drvenom masivnom radnom pločom.',
       specs: [
-        'Materijal: MDF lakiran u boju zida sa skrivenim ručicama',
-        'Sistem: Klizni mehanizam sa dvostranim usporivačima',
-        'Dimenzije: Širina 320cm x Visina 275cm',
-        'Okov: Hettich TopLine bešumni klizni sistem'
+        'Front šanka: 3D frezovani kanelirani MDF u bež boji',
+        'Bočne police: Otvorene police za čaše i dekoraciju u dezenu hrasta',
+        'Armatura: Visoka mat crna slavina i podgradna sudopera',
+        'Ploča: Otporna radna ploča debljine 38mm'
       ]
     },
-    'dnevna-tv-zid': {
-      title: 'TV media zid sa akustičnim letvicama i lebdećom komodom',
+    'dnevna-komoda': {
+      title: 'Dugačka TV komoda u dezenu kamena i drveta',
       category: 'Dnevne sobe',
-      img: 'images/portfolio/living-1.jpg',
-      desc: 'Centralna figura modernog dnevnog boravka sa panelom od prirodnih hrastovih letvica, skrivenim prolazima za sve kablove i konzolnom lebdećom komodom sa push mehanizmom.',
+      img: 'images/imagesss/boravak.webp',
+      desc: 'Niska konzolna komoda za televizore velikih dijagonala. Frontovi sa teksturom kamenog rustika u kombinaciji sa toplom drvenom gornjom policom i otvorenim delom za multimedijalne uređaje.',
       specs: [
-        'Zidna obloga: MDF akustične letvice na crnom filcu',
-        'Komoda: Farbani mat medijapan sa skrivenim nosačima nosivosti 120kg',
-        'Rasveta: Zatamnjiva indirektna LED traka 3000K toplo bela',
-        'Kablovi: Kompletno skrivena instalacija za konzolu i TV'
+        'Frontovi: Univer sa sinhronizovanom strukturom kamena',
+        'Polica: Masivna drvena ploča u boji oraha',
+        'Okov: Šarke sa mekim zatvaranjem i diskretne mat metalne ručice',
+        'Dimenzije: Dužina 280cm za maksimalno odlaganje'
       ]
     },
-    'dnevna-vitrina': {
-      title: 'Moderna biblioteka sa staklenom vitrinom i policama',
-      category: 'Dnevne sobe',
-      img: 'images/portfolio/living-2.jpg',
-      desc: 'Sofisticiran sistem polica i zatvorenih ormarića za knjige, dekoraciju i kolekciju pića, sa integrisanim LED trakama u svakoj vertikali.',
+    'kuhinja-plafon': {
+      title: 'U-kuhinja do plafona sa mermernom zidnom oblogom',
+      category: 'Kuhinje po meri',
+      img: 'images/imagesss/kuhinica.avif',
+      desc: 'Kuhinja u obliku slova U projektovana oko prozora. Donji elementi u elegantnoj sivoj boji, gornji u čistoj beloj, sa ugradnom mašinom za sudove i crnom granitnom sudoperom.',
       specs: [
-        'Materijal: Kombinacija crnog univera i prirodnog oraha',
-        'Vrata: Bronzano staklo sa ramom u boji šampanjca',
-        'Okov: Skrivene šarke sa usporivačem i uglom otvaranja 110°'
+        'Raspored: U-oblik sa radnom zonom ispod prozora',
+        'Materijal: Kombinacija antracit-sive i bele mat iverice',
+        'Zidna obloga: Mermerne keramičke ploče velikog formata',
+        'Oprema: Granitna okrugla sudopera i crna jednoručna baterija'
+      ]
+    },
+    'kupatilo-lavabo': {
+      title: 'Viseći ormarić sa ogledalom za kupatilo',
+      category: 'Kupatilski nameštaj',
+      img: 'images/imagesss/kupatilo.avif',
+      desc: 'Kupatilski ormarić sa ogledalom i donjim ormarićem za nadgradni lavabo. Specijalno zaštićen poliuretanskim lakom otpornim na paru i vlagu.',
+      specs: [
+        'Materijal: Vlagootporni beli poliuretan',
+        'Ogledalo: Ormarić sa ogledalnim vratima i unutrašnjim policama',
+        'Okov: Šarke sa usporivačem otporne na koroziju'
       ]
     },
     'spavaca-krevet': {
@@ -366,17 +414,6 @@ function initProjectModal() {
         'Materijal: HPL kompakt i vatro-otporna iverica',
         'Stolovi: Ergonomski radni stolovi sa otvorima za kabliranje',
         'Namena: Poslovne zgrade, IT hubovi, klinike i saloni'
-      ]
-    },
-    'kupatilo-ormaric': {
-      title: 'Kupatilski ormarić od vlagootpornog MDF-a sa kamenom pločom',
-      category: 'Kupatilski nameštaj',
-      img: 'images/portfolio/bathroom-1.jpg',
-      desc: 'Viseći kupatilski ormarić specijalno tretiran poliuretanskim lakom otpornim na paru i vlagu, sa keramičkim nadgradnim umivaonikom i ogledalom sa grejačem protiv magljenja.',
-      specs: [
-        'Materijal: Zeleni hidrofobni MDF otporan na vlagu',
-        'Fioke: Blum sa izrezom za sifon i organizatorom',
-        'Ploča: Keramička pločica velikog formata (mermer šara)'
       ]
     }
   };
