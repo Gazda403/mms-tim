@@ -20,11 +20,11 @@ MMs-tim je zanatsko-projektantski studio specijalizovan za vrhunski nameštaj po
 ## ✨ Ključne Funkcionalnosti Sajta
 - **Autentična tipografija**: Prilagođena prema originalnom logotipu (Playfair Display / Cormorant Garamond i Caveat za "tim").
 - **100% Podrška za srpsku latinicu**: Puna podrška za karaktere `č, ć, ž, đ, š` (Latin-ext).
-- **Interaktivni 3D Konfigurator Enterijera**: Omogućava posetiocima da odaberu prostor, stil, materijale i pametne okove, uz automatsko generisanje WhatsApp i Viber upita.
+- **Interaktivni Konfigurator Enterijera**: Omogućava posetiocima da odaberu prostor, stil, materijale i pametne okove, uz automatsko generisanje WhatsApp i Viber upita.
 - **Interaktivni filteri kategorija**: Trenutno filtriranje portfolija po prostorijama.
 - **Detaljni modalni pregled**: Prikaz specifikacija materijala i opreme za svaki model.
-- **"Kako Radimo" proces**: 4-stepeni harmonika prikaz (Konsultacije & Merenje, 3D Vizuelizacija, CNC Izrada, Montaža).
-- **Stručni timski sektori**: Pregled 4 stuba poslovanja (Proizvodnja, 3D Dizajn, Montaža na terenu, Konsultacije).
+- **"Kako Radimo" proces**: 4-stepeni harmonika prikaz (Konsultacije & Merenje, Idejno Planiranje, CNC Izrada, Montaža).
+- **Stručni timski sektori**: Pregled 4 stuba poslovanja (Proizvodnja, Projektni Studio, Montaža na terenu, Konsultacije).
 - **Kontakt & Rezervacija merenja**: Forma sa selekcijom opštine i direktni linkovi za poziv, WhatsApp i Viber.
 
 ---

@@ -102,7 +102,7 @@ function initSteppedAccordion() {
 }
 
 /* ==========================================================================
-   Interactive Interior Configurator & 3D Spec Builder
+   Interactive Interior Configurator & Spec Builder
    (Design & Style Focused - No Price Sensitivity)
    ========================================================================== */
 function initInteriorConfigurator() {
@@ -209,7 +209,7 @@ function initInteriorConfigurator() {
     if (summaryHardware) summaryHardware.textContent = hardwareName;
 
     // Pre-formatted WhatsApp & Viber inquiries
-    const waText = `Zdravo MMs-tim! Konfigurisao sam svoj prostor na va?em sajtu:\n- Forma: ${spaceData.name}\n- Stil: ${styleName}\n- Materijali: ${materialName}\n- Oprema/detalj: ${hardwareName}\n\n?eleo bih da se ?ujemo oko izrade besplatnog 3D idejnog projekta i uzimanja mera.`;
+    const waText = `Zdravo MMs-tim! Konfigurisao sam svoj prostor na vašem sajtu:\n- Forma: ${spaceData.name}\n- Stil: ${styleName}\n- Materijali: ${materialName}\n- Oprema/detalj: ${hardwareName}\n\nŽeleo bih da se čujemo oko dogovora i besplatnog uzimanja mera za moj prostor.`;
     const encoded = encodeURIComponent(waText);
 
     const phone = '381641234567';
@@ -366,7 +366,7 @@ function initProjectModal() {
       img: 'images/imagesss/kuhinjacesma.jpg',
       desc: 'Elegantni šank koji odvaja kuhinjski deo od trpezarije. Prednji panel izrađen je sa finim vertikalnim kanelurama (rebrasti dezen), sa bočnom otvorenom policom za začine i drvenom masivnom radnom pločom.',
       specs: [
-        'Front šanka: 3D frezovani kanelirani MDF u bež boji',
+        'Front šanka: Reljefni kanelirani MDF u bež boji',
         'Bočne police: Otvorene police za čaše i dekoraciju u dezenu hrasta',
         'Armatura: Visoka mat crna slavina i podgradna sudopera',
         'Ploča: Otporna radna ploča debljine 38mm'
@@ -422,7 +422,7 @@ function initProjectModal() {
       title: 'Prijemni pult za poslovni prostor i kancelarijski stolovi',
       category: 'Poslovni nameštaj',
       img: 'images/portfolio/office-1.jpg',
-      desc: 'Reprezentativna recepcija sa kombinacijom belog mermernog dekora i drvenih obloga sa pozadinskim osvetljenjem 3D logotipa kompanije.',
+      desc: 'Reprezentativna recepcija sa kombinacijom belog mermernog dekora i drvenih obloga sa pozadinskim osvetljenjem logotipa kompanije.',
       specs: [
         'Materijal: HPL kompakt i vatro-otporna iverica',
         'Stolovi: Ergonomski radni stolovi sa otvorima za kabliranje',
@@ -454,7 +454,7 @@ function initProjectModal() {
         modalSpecs.appendChild(li);
       });
 
-      const waText = encodeURIComponent(`Zdravo MMs-tim! Video sam vaš rad "${data.title}" (${data.category}) i želeo bih slično rešenje za svoj prostor.`);
+    const waText = `Zdravo MMs-tim! Konfigurisao sam svoj prostor na vašem sajtu:\n- Forma: ${spaceData.name}\n- Stil: ${styleName}\n- Materijali: ${materialName}\n- Oprema/detalj: ${hardwareName}\n\nŽeleo bih da se čujemo oko dogovora i besplatnog uzimanja mera za moj prostor.`;
       if (modalWaLink) modalWaLink.href = `https://wa.me/381641234567?text=${waText}`;
 
       modal.classList.add('open');
